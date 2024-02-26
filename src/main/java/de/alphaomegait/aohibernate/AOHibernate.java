@@ -13,6 +13,8 @@ public class AOHibernate extends JavaPlugin {
 
 	private final Logger logger = Logger.getLogger(AOHibernate.class.getName());
 
+	private DatabaseFactory databaseFactory;
+
 	private AOPlayerDao aoPlayerDao;
 
 	@Override
@@ -31,6 +33,7 @@ public class AOHibernate extends JavaPlugin {
 
 	@Override
 	public void onEnable() {
+		this.databaseFactory = new DatabaseFactory(this);
 		this.aoPlayerDao = new AOPlayerDao(this);
 
 		Bukkit.getPluginManager().registerEvents(

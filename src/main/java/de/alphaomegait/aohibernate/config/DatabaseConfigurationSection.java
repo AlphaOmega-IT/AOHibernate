@@ -73,7 +73,7 @@ public class DatabaseConfigurationSection {
 	 * @return  the database name
 	 */
 	public String getDatabaseName() {
-		this.databaseName = this.yamlConfiguration.getString("database-name", "");
+		this.databaseName = this.yamlConfiguration.getString("databaseName", "");
 		return this.databaseName;
 	}
 
@@ -83,7 +83,7 @@ public class DatabaseConfigurationSection {
 	 * @return  the table creation value, or "update" if it is null
 	 */
 	public String getTableCreation() {
-		this.tableCreation = this.yamlConfiguration.getString("table-creation", "update");
+		this.tableCreation = this.yamlConfiguration.getString("tableCreation", "update");
 		return this.tableCreation;
 	}
 
@@ -113,7 +113,7 @@ public class DatabaseConfigurationSection {
 	 * @return         	a string representation of the value of showSQL
 	 */
 	public Boolean getIsShowSQL() {
-		this.showSQL = this.yamlConfiguration.getBoolean("show-sql", true);
+		this.showSQL = this.yamlConfiguration.getBoolean("showSql", true);
 		return this.showSQL;
 	}
 
@@ -123,7 +123,7 @@ public class DatabaseConfigurationSection {
 	 * @return         	the parent path of the entity annotated class
 	 */
 	public String getEntityAnnotatedClassParentPath() {
-		this.entityAnnotatedClassParentPath = this.yamlConfiguration.getString("entity-annotated-class-parent-path", "database.entities.");
+		this.entityAnnotatedClassParentPath = this.yamlConfiguration.getString("entityAnnotatedClassParentPath", "database.entities");
 		return this.entityAnnotatedClassParentPath;
 	}
 

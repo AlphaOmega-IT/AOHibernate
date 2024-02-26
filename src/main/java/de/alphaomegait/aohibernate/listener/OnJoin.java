@@ -63,6 +63,6 @@ public class OnJoin implements Listener {
 				player.sendMessage("§5Name: " + aoPlayer.get().getPlayerName());
 				player.sendMessage("§5UUID: " + aoPlayer.get().getPlayerUUID());
 			}
-		});
+		}).join();
 	}
 }

@@ -27,9 +27,6 @@ public class DatabaseFactory implements IDatabaseProvider {
 	/**
 	 * Constructs a DatabaseFactory with the provided configManager, classLoader, and logger.
 	 * Initializes the database configuration section, classLoader, and logger. Calls the connect method to establish a database connection.
-	 * @param configManager the configuration manager for retrieving database settings
-	 * @param logger the logger for logging messages
-	 * @throws Exception if an error occurs during the initialization process
 	 */
 	public DatabaseFactory(
 		final @NotNull AOHibernate aoHibernate

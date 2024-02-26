@@ -15,5 +15,5 @@ databaseName: 'aohibernate'
 tableCreation: 'update'
 username: 'root'
 password: ''
-showSQL: 'false'
+showSQL: false
 entityAnnotatedClassParentPath: 'database.entities'

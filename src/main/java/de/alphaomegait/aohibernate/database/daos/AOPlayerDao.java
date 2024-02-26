@@ -30,7 +30,7 @@ public class AOPlayerDao extends BaseDao<AOPlayer> {
 		final @NotNull UUID uuid
 	) {
 		Query<AOPlayer> query = this.createNamedQuery("AOPlayer.findByUUID");
-		query.setParameter("uuid", uuid);
+		query.setParameter("playerUUID", uuid);
 		return Optional.ofNullable(query.getSingleResultOrNull());
 	}
 
@@ -53,7 +53,7 @@ public class AOPlayerDao extends BaseDao<AOPlayer> {
 				idToUpdate
 			));
 			criteriaUpdate.set(
-				"uuid",
+				"playerUUID",
 				player.getPlayerUUID()
 			);
 			criteriaUpdate.set(
