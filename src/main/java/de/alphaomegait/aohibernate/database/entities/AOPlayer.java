@@ -20,7 +20,7 @@ import java.util.UUID;
 )
 @NamedQuery(
 	name = "AOPlayer.findByUUID",
-	query = "SELECT p FROM AOPlayer p WHERE p.playerUUID = :uuid"
+	query = "SELECT p FROM AOPlayer p WHERE p.playerUUID = :playerUUID"
 )
 @Table(name = "ao_player")
 public class AOPlayer implements Serializable {

@@ -12,7 +12,7 @@ main: de.alphaomegait.aohibernate.AOHibernate
 
 # The API version required by the plugin.
 api-version: '1.20'
-  
+
 # The author of the plugin.
 author: AlphaOmega-IT
 

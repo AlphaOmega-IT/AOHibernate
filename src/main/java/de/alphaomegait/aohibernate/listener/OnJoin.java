@@ -1,7 +1,6 @@
 package de.alphaomegait.aohibernate.listener;
 
 import de.alphaomegait.aohibernate.AOHibernate;
-import de.alphaomegait.aohibernate.database.daos.AOPlayerDao;
 import de.alphaomegait.aohibernate.database.entities.AOPlayer;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
